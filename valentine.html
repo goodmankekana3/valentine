@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For NTHABELENG ❤️</title>
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffb3c6, #ffe5ec);
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 22px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+      min-height: 90px;
+      line-height: 1.5;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      background: #ff4d6d;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e63956;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h1>Hey NTHABELENG 💕</h1>
+    <p id="message">I know we can’t be together today… but I still wanted to sit with you for a bit 🫶🏽</p>
+    <button onclick="nextMessage()">Tap gently 💗</button>
+  </div>
+
+  <script>
+    const messages = [
+      "This is me being a little shy, but also really wanting you to feel how important you are to me",
+      "Every small thing about you stays with me longer than you probably realise",
+      "If I was there, I’d be quiet… just close to you",
+      "I hope you feel safe, wanted, and loved — even through a screen",
+      "You mean more to me than I’m ever brave enough to say out loud",
+      "And every time you talk, and I listen…",
+      "maaaakes seeeense 💕",
+      "So… will you be my Valentine? ❤️"
+    ];
+
+    let index = 0;
+
+    function nextMessage() {
+      index++;
+      if (index < messages.length) {
+        document.getElementById("message").innerText = messages[index];
+      }
+    }
+  </script>
+</body>
+</html>
